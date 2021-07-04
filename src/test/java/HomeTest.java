@@ -39,12 +39,12 @@ public class HomeTest {
 
         int r = random.nextInt(100) + 1;
         wd.findElement(By.xpath("//a[normalize-space()='ADD']")).click();
-        wd.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("VASYA" + r + Keys.TAB);
-        wd.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("PUPKIN" + Keys.TAB);
-        wd.findElement(By.xpath("//input[@placeholder='Phone']")).sendKeys("05339874" + r  + Keys.TAB);
-        wd.findElement(By.xpath("//input[@placeholder='email']")).sendKeys("Test" + r + "@gmail.com" + Keys.TAB);
-        wd.findElement(By.xpath("//input[@placeholder='Address']")).sendKeys("0vo2z" + Keys.TAB);
-        wd.findElement(By.xpath("//input[@placeholder='description']")).sendKeys("wmCPH134" + Keys.TAB);
+        wd.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("VASYA" + r);
+        wd.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("PUPKIN");
+        wd.findElement(By.xpath("//input[@placeholder='Phone']")).sendKeys("05339874" + r);
+        wd.findElement(By.xpath("//input[@placeholder='email']")).sendKeys("Test" + r + "@gmail.com");
+        wd.findElement(By.xpath("//input[@placeholder='Address']")).sendKeys("0vo2z");
+        wd.findElement(By.xpath("//input[@placeholder='description']")).sendKeys("wmCPH134");
         wd.findElement(By.xpath("//b[normalize-space()='Save']")).click();
 
 
