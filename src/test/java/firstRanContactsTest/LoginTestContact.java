@@ -1,3 +1,5 @@
+package firstRanContactsTest;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,9 +33,11 @@ public class LoginTestContact {
 
         //Login
         click(By.xpath("//a[normalize-space()='LOGIN']"));
+
         fl(By.xpath("//input[@placeholder='Email']"),"TestIdea@gmail.com");
         fl(By.xpath("//input[@placeholder='Password']"),"Qwerty123$");
         click(By.xpath("//button[.=' Login']"));
+        setWait(By.xpath("//h1[.=' No Contacts here!']"));
         setWait(By.xpath("//a[normalize-space()='ADD']"));
 
         //createContact
@@ -55,7 +59,7 @@ public class LoginTestContact {
         //Sign Out
         //click(By.xpath("//button[.='Sign Out']"));
     }
-    @Test (enabled = false)
+    @Test //(enabled = false)
     public void negativeLogin() {
 
         try {
